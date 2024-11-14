@@ -18,10 +18,8 @@ smoker-recipe: false
 #for the smoker/blast furnace if they're enabled
 cooking-time: 200
 
-#Sets the experience gained by cooking rotten flesh into leather Default is 0, you can make these decimals such as 0.0 or 1.50 or 1.5
-#If you noticed that this is an array please ignore that, do to limitations on how it is called in the code, I was forced to do so, it will only take the first
-#in the list so there is no need to add more than 1
-experience-gain: [0]
+#Sets the experience gained by cooking rotten flesh into leather Default is 0
+experience-gain: 0
 
 #Adds a crafting recipe to convert Rotten Flesh to Leather, this is default: false,
 #I added this for those that like the original RottenFleshToLeather Plugin who I thought would prefer to have this
