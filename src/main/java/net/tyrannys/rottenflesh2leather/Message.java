@@ -12,11 +12,10 @@ public class Message {
 
     public static String getMessage(String message) {
 
-
         return prefix + message;
     }
 
-    public static String getMessageWithColor(String message, String chatColor) {
+    public static String getMessageWithColor(String message, ChatColor chatColor) {
 
         return prefix + (chatColor + message + ChatColor.RESET );
     }

@@ -3,6 +3,7 @@ package net.tyrannys.rottenflesh2leather;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
+import org.bukkit.command.Command;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -37,10 +38,12 @@ public final class RottenFlesh2Leather extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
 
+        this.getCommand("rf2l").setExecutor(new RF2LCommand(this));
+        this.getCommand("rf2l").setTabCompleter(new RF2LTabCompleter());
+        this.getCommand("rf2lreload").setExecutor(new ReloadCommand(this));
+        this.getCommand("rf2lreloadplugin").setExecutor(new PluginReloadCommand(this));
 
         addRecipes();
-
-        this.getCommand("rf2l").setExecutor(new rf2lCommand());
 
         getServer().getPluginManager().registerEvents(this, this);
 

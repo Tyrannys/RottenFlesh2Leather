@@ -7,10 +7,15 @@ author: Tyrannys
 description: A simple plugin which burns the massive amount of rotten flesh into fresh leather for you to use, 100% vegan production approved!
 
 commands:
-  rottenflesh2leather:
-    aliases: [rf2l]
+  rf2l:
+    aliases: [rottenflesh2leather]
     description: if you want to reload the config type /rf2l reload
+    usage: /<command> <reload|help>
     permission: rf2l
+  rf2lreload:
+    description: Reload plugin
+    usage: /<command> reload
+    permission: rf2l.reload
 permissions:
   rf2l:
     default: false
