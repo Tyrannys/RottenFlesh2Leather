@@ -11,7 +11,6 @@
     <description>Allows you to craft/smelt/blast/smoke your rotten flesh into leather</description>
     <modules>
         <module>RottenFlesh2Leather-core</module>
-        <module>RottenFlesh2Leather-spigot_1_20_R2</module>
         <module>RottenFlesh2Leather-dist</module>
     </modules>
 </project>

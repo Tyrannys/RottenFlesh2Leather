@@ -46,7 +46,7 @@
         </dependency>
         <dependency>
             <groupId>net.tyrannys</groupId>
-            <artifactId>RottenFlesh2Leather-1_20_R2</artifactId>
+            <artifactId>RottenFlesh2Leather-spigot_1_20_R2</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
     </dependencies>
