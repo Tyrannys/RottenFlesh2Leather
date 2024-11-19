@@ -1,0 +1,5 @@
+name: RottenFlesh2Leather
+version: '1.21+-1.0'
+main: net.tyrannys.rottenFlesh2Leather.RottenFlesh2Leather
+api-version: '1.21'
+id: 6ruzVe3A

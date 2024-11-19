@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>net.tyrannys</groupId>
+    <artifactId>RottenFlesh2Leather</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+    <name>RottenFlesh2Leather</name>
+    <description>Allows you to craft/smelt/blast/smoke your rotten flesh into leather</description>
+    <modules>
+        <module>RottenFlesh2Leather-core</module>
+        <module>RottenFlesh2Leather-spigot_1_20_R2</module>
+        <module>RottenFlesh2Leather-dist</module>
+    </modules>
+</project>

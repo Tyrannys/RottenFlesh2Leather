@@ -1,0 +1,4 @@
+name: spigot_1_20_R2
+version: '1.0'
+main: net.tyrannys.spigot_1_20_R2.Spigot_1_20_R2
+api-version: '1.21'

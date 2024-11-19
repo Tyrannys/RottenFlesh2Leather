@@ -1,0 +1,46 @@
+###################################
+#
+#       RottenFlesh2Leather Config
+#               by Tyrannys
+#
+###################################
+
+#Adds a furnace recipe to convert Rotten Flesh to Leather, This is default: true
+furnace-recipe: true
+
+#Adds a blasting furnace recipe to convert Rotten Flesh to Leather, this is default: true
+blasting-recipe: true
+
+#Adds a smoker recipe to convert Rotten Flesh to Leather, this is default: false
+smoker-recipe: false
+
+#Sets the cooking time required by the furnace, please remember that whatever time you put in will be divided by 2 (effectively halving the time)
+#for the smoker/blast furnace if they're enabled
+cooking-time: 200
+
+#Sets the experience gained by cooking rotten flesh into leather Default is 0
+experience-gain: 0
+
+#Adds a crafting recipe to convert Rotten Flesh to Leather, this is default: false,
+#I added this for those that like the original RottenFleshToLeather Plugin who I thought would prefer to have this
+crafting-recipe: false
+
+#Lets you change the current crafting recipe that is set, if you change it after logging in please set crafting-recipe to false,
+#Restart, set it to true, then restart again, I'm still new to plugins, so I haven't found a way to reset it upon logging into the server if it has changed
+#
+#Think about it like this
+#
+#  "XXX" ;
+#  "XXX" ;
+#  "XXX" ;A standard Crafting Table recipe
+# X being the Rotten Flesh that you want to convert into the leather, if you would prefer an easier crafting method such as
+# Only one Rotten Flesh to Leather you can do this, which should allow you to set it wherever you want into the crafting table
+#
+# ""
+# "X"
+# ""
+
+crafting-recipe-top: "XXX"
+crafting-recipe-mid: "XXX"
+crafting-recipe-bot: "XXX"
+
