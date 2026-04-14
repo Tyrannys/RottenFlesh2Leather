@@ -1,27 +1,26 @@
 plugins {
+    id 'com.gradleup.shadow' version '9.4.1'
     id 'java'
 }
 
-group = 'net.tyrannys'
-version = '1.0-SNAPSHOT'
+group 'net.tyrannys'
+version '1.1'
+jar.enabled = false
 
 repositories {
     mavenCentral()
+    mavenLocal()
     maven {
-        name = "spigotmc-repo"
-        url = "https://hub.spigotmc.org/nexus/content/repositories/snapshots/"
-    }
-    maven {
-        name = "sonatype"
-        url = "https://oss.sonatype.org/content/groups/public/"
+        url "https://hub.spigotmc.org/nexus/content/repositories/snapshots/"
     }
 }
 
 dependencies {
-    compileOnly("org.spigotmc:spigot-api:1.21.1-R0.1-SNAPSHOT")
+    compileOnly 'org.spigotmc:spigot-api:26.1-R0.1-SNAPSHOT'
+    implementation 'org.bstats:bstats-bukkit:3.2.1'
 }
 
-def targetJavaVersion = 21
+def targetJavaVersion = 25
 java {
     def javaVersion = JavaVersion.toVersion(targetJavaVersion)
     sourceCompatibility = javaVersion
@@ -40,10 +39,16 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 processResources {
-    def props = [version: version]
-    inputs.properties props
-    filteringCharset 'UTF-8'
-    filesMatching('plugin.yml') {
-        expand props
-    }
+    filter { String line -> line.replace('${version}', project.version.toString()) }
 }
+
+shadowJar {
+    archiveFileName = 'RottenFlesh2Leather-' + project.version.toString() + '.jar'
+    relocate 'org.bstats', 'net.tyrannys.rottenflesh2leather.lib.bstats'
+}
+
+artifacts {
+    shadowJar
+}
+
+assemble.dependsOn(shadowJar)

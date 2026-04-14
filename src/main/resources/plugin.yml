@@ -1,7 +1,18 @@
 name: RottenFlesh2Leather
-version: '1.0-SNAPSHOT'
+version: '1.1.0'
 main: net.tyrannys.rottenflesh2leather.RottenFlesh2Leather
-api-version: '1.21'
+api-version: '26.1'
+folia-supported: true
 prefix: RottenFlesh2Leather
 author: Tyrannys
 description: A simple plugin which burns the massive amount of rotten flesh into fresh leather for you to use, 100% vegan production approved!
+commands:
+  rottenflesh2leather:
+    aliases: [rf2l]
+    description: Root command for RottenFlesh2Leather.
+    usage: /<command> reload
+    permission: rottenflesh2leather.reload
+permissions:
+  rottenflesh2leather.reload:
+    description: Allows reloading RottenFlesh2Leather config.
+    default: op

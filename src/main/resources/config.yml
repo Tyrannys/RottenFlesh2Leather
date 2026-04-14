@@ -5,6 +5,9 @@
 #
 ###################################
 
+#Enable or disable bStats metrics reporting
+bstats-enabled: true
+
 #Adds a furnace recipe to convert Rotten Flesh to Leather, This is default: true
 furnace-recipe: true
 
